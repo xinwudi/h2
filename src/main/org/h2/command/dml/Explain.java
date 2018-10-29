@@ -257,16 +257,7 @@ public class Explain extends Prepared {
         if (visitor.getTablefilters().get(i).toString().contains("PUBLIC")){
             listTablefilter.add(visitor.getTablefilters().get(i).toString().substring(visitor.getTablefilters().get(i).toString().indexOf(".")).replace(".",""));
             visitor.setTablefilterya(listTablefilter);
-        }else if(visitor.getTablefilters().get(i).getTable().toString()!=null){
-            if (visitor.getTablefilters().get(i).getTable().toString().contains(":")){
-                listTablefilter.add(visitor.getTablefilters().get(i).getTable().toString().substring(0,visitor.getTablefilters().get(i).toString().indexOf(":")));
-                visitor.setTablefilterya(listTablefilter);
-            }else{
-                listTablefilter.add(visitor.getTablefilters().get(i).getTable().toString());
-                visitor.setTablefilterya(listTablefilter);
-            }
-        }
-        else {
+        }else {
             listTablefilter.add("<derived>");
             visitor.setTablefilterya(listTablefilter);
         }
