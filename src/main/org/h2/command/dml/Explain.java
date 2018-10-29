@@ -142,7 +142,7 @@ public class Explain extends Prepared {
                     Value[] row = new Value[]{
                             ValueInt.get(0),
                             ValueString.get(""),
-                            ValueString.get(""),
+                            ValueString.get("null"),
                             ValueString.get("NULL")
                     };
                 this.add(row);
