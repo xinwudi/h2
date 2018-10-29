@@ -1478,7 +1478,7 @@ public class Select extends Query {
                      }
              sb.append("Using where");
         }else {
-            visitor.setRef("const");
+            visitor.setRef("null");
             visitor.addRefs();
             visitor.setRefs(visitor.getRefs());
         }
