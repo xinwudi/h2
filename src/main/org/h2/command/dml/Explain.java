@@ -141,7 +141,7 @@ public class Explain extends Prepared {
             if (maxrows >= 0) {
                     Value[] row = new Value[]{
                             ValueInt.get(0),
-                            ValueString.get(""),
+                            ValueString.get("null"),
                             ValueString.get("null"),
                             ValueString.get("NULL")
                     };
